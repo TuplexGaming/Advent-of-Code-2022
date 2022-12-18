@@ -1,13 +1,13 @@
 from aocd import get_data
 
 
-def get_input(day, year):
+def get_input(day, year=2022):
     data = get_data(day=day, year=year)
     return [line.strip() for line in data]
 
 
 def part_1():
-    return get_input(4, 2022)
+    pass
 
 
 def part_2():
