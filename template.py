@@ -3,7 +3,7 @@ from aocd import get_data
 
 def get_input(day, year=2022):
     data = get_data(day=day, year=year)
-    return [line.strip() for line in data]
+    return data.splitlines()
 
 
 def part_1():
