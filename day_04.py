@@ -25,14 +25,13 @@ def part_1():
 
 def part_2():
     pairs = get_input(4)
-    # pairs =[
-    #     [2, 4], [6, 8],
-    #     [2, 3], [4, 5],
-    #     [5, 7], [7, 9],
-    #     [2, 8], [3, 7],
-    #     [6, 6], [4, 6],
-    #     [2, 6], [4, 8]
-    # ]
+    count = 0
+    for i in range(0, len(pairs), 2):
+        elf_a = pairs[i]
+        elf_b = pairs[i+1]
+        if max(elf_a[0], elf_b[0]) <= min(elf_a[1], elf_b[1]):
+            count += 1
+    return count
 
 
 if __name__ == "__main__":
